@@ -1,5 +1,5 @@
 <!-- cargo-rdme start -->
-
+<!-- The `LogView` can be seen as an analog of `VecDeque` while `MapView` is an analog of `BTreeMap`. -->
 This module is used in the Linera protocol to map complex data structures onto a
 key-value store. The central notion is a [`views::View`](https://docs.rs/linera-views/latest/linera_views/views/trait.View.html)
 which can be loaded from storage, modified in memory, and then committed (i.e. the changes are atomically persisted in storage).
@@ -52,6 +52,7 @@ The following views implement the `View` trait:
 * `ViewContainer<C>` implements a `KeyValueStore` and is used internally.
 
 The `LogView` can be seen as an analog of `VecDeque` while `MapView` is an analog of `BTreeMap`.
+
 
 <!-- cargo-rdme end -->
 
